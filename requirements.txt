@@ -1,0 +1,6 @@
+nltk>=3.9
+scikit-learn>=1.6
+joblib>=1.4
+pandas>=2.0
+# Optional: openpyxl for reading Attendance/*.xlsx (currently unused by the parser)
+# openpyxl>=3.1

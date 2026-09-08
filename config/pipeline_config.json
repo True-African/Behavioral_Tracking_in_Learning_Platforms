@@ -1,0 +1,21 @@
+{
+  "teacher_name": "Simeon Nsabiyumva",
+  "engagement_weights": {
+    "attendance": 0.40,
+    "speaking": 0.35,
+    "chat": 0.25
+  },
+  "new_engagement_blend": {
+    "base_engagement": 0.70,
+    "contribution": 0.30
+  },
+  "sentiment": {
+    "positive_threshold": 0.05,
+    "negative_threshold": -0.05
+  },
+  "special_students_file": "special_students.txt",
+  "exclude_students_file": "config/exclude.txt",
+  "student_emails_file": "config/student_emails.csv",
+  "models_dir": "models",
+  "output_dir": "output"
+}

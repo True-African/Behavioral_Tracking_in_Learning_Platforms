@@ -1,0 +1,41 @@
+text,label
+"Here is a link to the documentation",helping_others
+"You need to call the function before the loop",helping_others
+"The error is because you forgot to import the module",helping_others
+"I shared the slides in the chat",helping_others
+"That is correct, well done",helping_others
+"Try using the split method on the string",helping_others
+"This resource explains the concept clearly",helping_others
+"The answer should be four quarters of ninety",helping_others
+"Let me explain how the recursion works",helping_others
+"You can find the assignment on Canvas",helping_others
+"Can you explain how this works?",seeking_help
+"I don't understand this part",seeking_help
+"What does this function return?",seeking_help
+"How do I submit the assignment?",seeking_help
+"Which library should I use?",seeking_help
+"Can someone clarify the deadline?",seeking_help
+"Why is my code failing?",seeking_help
+"What is the difference between these two?",seeking_help
+"How many minutes do we need to attend?",seeking_help
+"Could you repeat the last point?",seeking_help
+"haha lol",social_off_topic
+"I was in grade 5",social_off_topic
+"Seyi is from Zimbabwe",social_off_topic
+"In this economy",social_off_topic
+"Crazyyyy",social_off_topic
+"The class demands",social_off_topic
+"People are inviting problems they cannot defend",social_off_topic
+"But we write so well sir",social_off_topic
+"how is that AI",social_off_topic
+"please listen to this",social_off_topic
+"ok",neutral_ack
+"thanks",neutral_ack
+"yes",neutral_ack
+"I agree",neutral_ack
+"got it",neutral_ack
+"noted",neutral_ack
+"understood",neutral_ack
+"sure",neutral_ack
+"thank you",neutral_ack
+"no problem",neutral_ack
