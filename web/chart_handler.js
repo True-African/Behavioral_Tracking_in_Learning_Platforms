@@ -150,6 +150,8 @@ function createCharts() {
     createAttendanceChart();
     createParticipationChart();
     createSessionBreakdownChart();
+    createSentimentChart();
+    createContributorsChart();
 }
 
 function createEngagementChart() {
@@ -355,6 +357,55 @@ function createSessionBreakdownChart() {
     });
 }
 
+function createSentimentChart() {
+    const ctx = document.getElementById('sentimentChart').getContext('2d');
+    const profiles = attendanceData.contribution_profiles || {};
+    const counts = { positive: 0, neutral: 0, negative: 0 };
+    Object.values(profiles).forEach(p => {
+        const label = p.sentiment_label;
+        if (counts.hasOwnProperty(label)) counts[label]++;
+    });
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Positive', 'Neutral', 'Negative'],
+            datasets: [{
+                data: [counts.positive, counts.neutral, counts.negative],
+                backgroundColor: ['rgba(40,167,69,0.8)', 'rgba(255,193,7,0.8)', 'rgba(220,53,69,0.8)'],
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { title: { display: true, text: 'Student Sentiment Distribution' } }
+        }
+    });
+}
+
+function createContributorsChart() {
+    const ctx = document.getElementById('contributorsChart').getContext('2d');
+    const profiles = attendanceData.contribution_profiles || {};
+    const top = Object.entries(profiles)
+        .sort((a, b) => (b[1].helped_peers_score || 0) - (a[1].helped_peers_score || 0))
+        .slice(0, 10);
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: top.map(([name]) => name.length > 15 ? name.substring(0, 15) + '...' : name),
+            datasets: [{
+                label: 'Helped-Peers Score (%)',
+                data: top.map(([, p]) => p.helped_peers_score || 0),
+                backgroundColor: 'rgba(40, 167, 69, 0.8)',
+            }]
+        },
+        options: {
+            responsive: true,
+            indexAxis: 'y',
+            plugins: { title: { display: true, text: 'Top Contributors (Helped Peers)' } },
+            scales: { x: { beginAtZero: true, max: 100 } }
+        }
+    });
+}
+
 function updateStudentLists() {
     const engagementMetrics = attendanceData.engagement_metrics;
     
@@ -368,8 +419,9 @@ function updateStudentLists() {
         <div class="student-item">
             <div class="student-name">${name}</div>
             <div class="student-stats">
-                Engagement: ${metrics.engagement_score}% | 
-                Attendance: ${metrics.attendance_rate}% | 
+                Engagement: ${metrics.new_engagement_score ?? metrics.engagement_score}% | 
+                Helped: ${metrics.helped_peers_score ?? 0}% | 
+                Sentiment: ${metrics.sentiment_label ?? 'n/a'}
                 Total Interactions: ${metrics.total_interactions}
             </div>
         </div>
@@ -389,8 +441,9 @@ function updateStudentLists() {
             <div class="student-item ${engagementClass}">
                 <div class="student-name">${name}</div>
                 <div class="student-stats">
-                    Engagement: ${metrics.engagement_score}% | 
-                    Attendance: ${metrics.attendance_rate}% | 
+                    Engagement: ${metrics.new_engagement_score ?? metrics.engagement_score}% | 
+                    Helped: ${metrics.helped_peers_score ?? 0}% | 
+                    Sentiment: ${metrics.sentiment_label ?? 'n/a'}
                     Total Interactions: ${metrics.total_interactions}
                 </div>
             </div>
@@ -408,7 +461,7 @@ function exportData() {
     }
     
     // Create a comprehensive CSV export
-    let csvContent = "Student Name,Sessions Attended,Sessions Spoke,Sessions Chatted,Total Speaking,Total Chat,Attendance Rate,Speaking Rate,Chat Rate,Engagement Score\n";
+    let csvContent = "Student Name,Sessions Attended,Sessions Spoke,Sessions Chatted,Total Speaking,Total Chat,Attendance Rate,Speaking Rate,Chat Rate,Engagement Score,Sentiment,Helped Peers Score,New Engagement Score\n";
     
     const studentStats = attendanceData.student_overall_stats;
     const engagementMetrics = attendanceData.engagement_metrics;
@@ -427,7 +480,10 @@ function exportData() {
             metrics.attendance_rate || 0,
             metrics.speaking_rate || 0,
             metrics.chat_rate || 0,
-            metrics.engagement_score || 0
+            metrics.engagement_score || 0,
+            metrics.sentiment_label || '',
+            metrics.helped_peers_score || 0,
+            metrics.new_engagement_score || 0
         ].join(',') + '\n';
     });
     

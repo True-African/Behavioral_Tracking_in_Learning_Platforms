@@ -1,0 +1,1684 @@
+{
+  "summary": {
+    "total_sessions": 2,
+    "total_unique_students": 38,
+    "date_range": {
+      "start": "2026/09/01",
+      "end": "2026/09/03"
+    },
+    "avg_attendance_per_session": 36.0
+  },
+  "sessions": {
+    "2026/09/01": {
+      "date": "2026/09/01",
+      "time": "08:50",
+      "attendees": [
+        "Student_001",
+        "Student_002",
+        "Student_004",
+        "Student_005",
+        "Student_006",
+        "Student_007",
+        "Student_008",
+        "Student_009",
+        "Student_010",
+        "Student_011",
+        "Student_012",
+        "Student_013",
+        "Student_014",
+        "Student_015",
+        "Student_016",
+        "Student_017",
+        "Student_018",
+        "Student_019",
+        "Student_020",
+        "Student_021",
+        "Student_022",
+        "Student_024",
+        "Student_025",
+        "Student_026",
+        "Student_027",
+        "Student_028",
+        "Student_029",
+        "Student_030",
+        "Student_031",
+        "Student_032",
+        "Student_033",
+        "Student_034",
+        "Student_035",
+        "Student_036",
+        "Student_037",
+        "Student_038"
+      ],
+      "total_attendees": 36,
+      "speaking_interactions": {
+        "Student_025": 2,
+        "Student_011": 18,
+        "Student_015": 12,
+        "Student_022": 5,
+        "Student_032": 6,
+        "Student_016": 9,
+        "Student_031": 2,
+        "Student_006": 6,
+        "Student_027": 13
+      },
+      "chat_interactions": {
+        "Student_035": 3,
+        "Student_032": 5,
+        "Student_002": 5,
+        "Student_020": 7,
+        "Student_038": 2,
+        "Student_022": 3,
+        "Student_015": 2,
+        "Student_005": 1,
+        "Student_030": 2,
+        "Student_017": 3,
+        "Student_027": 2,
+        "Student_026": 2,
+        "Student_016": 12,
+        "Student_006": 1,
+        "Student_011": 1,
+        "Student_004": 2,
+        "Student_031": 3
+      },
+      "time_participation": {
+        "00:10": 1,
+        "00:20": 1,
+        "00:30": 3,
+        "00:40": 1,
+        "00:50": 1,
+        "01:00": 2,
+        "01:10": 3,
+        "01:20": 2
+      },
+      "students_who_spoke": [
+        "Student_025",
+        "Student_011",
+        "Student_015",
+        "Student_022",
+        "Student_032",
+        "Student_016",
+        "Student_031",
+        "Student_006",
+        "Student_027"
+      ],
+      "students_who_chatted": [
+        "Student_035",
+        "Student_032",
+        "Student_002",
+        "Student_020",
+        "Student_038",
+        "Student_022",
+        "Student_015",
+        "Student_005",
+        "Student_030",
+        "Student_017",
+        "Student_027",
+        "Student_026",
+        "Student_016",
+        "Student_006",
+        "Student_011",
+        "Student_004",
+        "Student_031"
+      ],
+      "total_speakers": 9,
+      "total_chatters": 17
+    },
+    "2026/09/03": {
+      "date": "2026/09/03",
+      "time": "08:49",
+      "attendees": [
+        "Student_001",
+        "Student_002",
+        "Student_003",
+        "Student_004",
+        "Student_005",
+        "Student_006",
+        "Student_007",
+        "Student_008",
+        "Student_009",
+        "Student_011",
+        "Student_012",
+        "Student_013",
+        "Student_014",
+        "Student_015",
+        "Student_016",
+        "Student_017",
+        "Student_018",
+        "Student_019",
+        "Student_020",
+        "Student_021",
+        "Student_022",
+        "Student_023",
+        "Student_024",
+        "Student_025",
+        "Student_026",
+        "Student_027",
+        "Student_028",
+        "Student_029",
+        "Student_030",
+        "Student_031",
+        "Student_032",
+        "Student_033",
+        "Student_035",
+        "Student_036",
+        "Student_037",
+        "Student_038"
+      ],
+      "total_attendees": 36,
+      "speaking_interactions": {
+        "Student_031": 1,
+        "Student_035": 2,
+        "Student_011": 2,
+        "Student_038": 4,
+        "Student_015": 9,
+        "Student_036": 9,
+        "Student_021": 3,
+        "Student_032": 1,
+        "Student_012": 3,
+        "Student_027": 3
+      },
+      "chat_interactions": {
+        "Student_032": 7,
+        "Student_035": 5,
+        "Student_005": 5,
+        "Student_022": 4,
+        "Student_006": 2,
+        "Student_031": 4,
+        "Student_011": 2,
+        "Student_027": 2,
+        "Student_028": 1,
+        "Student_009": 1,
+        "Student_013": 1,
+        "Student_001": 4,
+        "Student_036": 3,
+        "Student_038": 5,
+        "Student_019": 2,
+        "Student_030": 1,
+        "Student_017": 2,
+        "Student_021": 3,
+        "Student_033": 2,
+        "Student_002": 2,
+        "Student_012": 4,
+        "Student_015": 2,
+        "Student_025": 2,
+        "Student_016": 3,
+        "Student_037": 2,
+        "Student_014": 1,
+        "Student_029": 1,
+        "Student_020": 3,
+        "Student_004": 1,
+        "Student_018": 1,
+        "Student_024": 1,
+        "Student_008": 1,
+        "Student_007": 3,
+        "Student_026": 1
+      },
+      "time_participation": {
+        "00:10": 2,
+        "00:20": 3,
+        "00:40": 1,
+        "00:50": 3,
+        "01:10": 2
+      },
+      "students_who_spoke": [
+        "Student_031",
+        "Student_035",
+        "Student_011",
+        "Student_038",
+        "Student_015",
+        "Student_036",
+        "Student_021",
+        "Student_032",
+        "Student_012",
+        "Student_027"
+      ],
+      "students_who_chatted": [
+        "Student_032",
+        "Student_035",
+        "Student_005",
+        "Student_022",
+        "Student_006",
+        "Student_031",
+        "Student_011",
+        "Student_027",
+        "Student_028",
+        "Student_009",
+        "Student_013",
+        "Student_001",
+        "Student_036",
+        "Student_038",
+        "Student_019",
+        "Student_030",
+        "Student_017",
+        "Student_021",
+        "Student_033",
+        "Student_002",
+        "Student_012",
+        "Student_015",
+        "Student_025",
+        "Student_016",
+        "Student_037",
+        "Student_014",
+        "Student_029",
+        "Student_020",
+        "Student_004",
+        "Student_018",
+        "Student_024",
+        "Student_008",
+        "Student_007",
+        "Student_026"
+      ],
+      "total_speakers": 10,
+      "total_chatters": 34
+    }
+  },
+  "student_overall_stats": {
+    "Student_001": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 4,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_002": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 7,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_003": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 0,
+      "sessions_attended": 1,
+      "sessions_spoke": 0,
+      "sessions_chatted": 0,
+      "attendance_dates": [
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": []
+    },
+    "Student_004": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_005": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 6,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_006": {
+      "total_transcript_interactions": 6,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_007": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_008": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_009": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_010": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 0,
+      "sessions_attended": 1,
+      "sessions_spoke": 0,
+      "sessions_chatted": 0,
+      "attendance_dates": [
+        "2026/09/01"
+      ],
+      "speaking_dates": [],
+      "chat_dates": []
+    },
+    "Student_011": {
+      "total_transcript_interactions": 20,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 2,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_012": {
+      "total_transcript_interactions": 3,
+      "total_chat_messages": 4,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_013": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_014": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_015": {
+      "total_transcript_interactions": 21,
+      "total_chat_messages": 4,
+      "sessions_attended": 2,
+      "sessions_spoke": 2,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_016": {
+      "total_transcript_interactions": 9,
+      "total_chat_messages": 15,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_017": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 5,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_018": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_019": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 2,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_020": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 10,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_021": {
+      "total_transcript_interactions": 3,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_022": {
+      "total_transcript_interactions": 5,
+      "total_chat_messages": 7,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_023": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 0,
+      "sessions_attended": 1,
+      "sessions_spoke": 0,
+      "sessions_chatted": 0,
+      "attendance_dates": [
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": []
+    },
+    "Student_024": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_025": {
+      "total_transcript_interactions": 2,
+      "total_chat_messages": 2,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01"
+      ],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_026": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_027": {
+      "total_transcript_interactions": 16,
+      "total_chat_messages": 4,
+      "sessions_attended": 2,
+      "sessions_spoke": 2,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_028": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_029": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 1,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_030": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_031": {
+      "total_transcript_interactions": 3,
+      "total_chat_messages": 7,
+      "sessions_attended": 2,
+      "sessions_spoke": 2,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_032": {
+      "total_transcript_interactions": 7,
+      "total_chat_messages": 12,
+      "sessions_attended": 2,
+      "sessions_spoke": 2,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_033": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 2,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_034": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 0,
+      "sessions_attended": 1,
+      "sessions_spoke": 0,
+      "sessions_chatted": 0,
+      "attendance_dates": [
+        "2026/09/01"
+      ],
+      "speaking_dates": [],
+      "chat_dates": []
+    },
+    "Student_035": {
+      "total_transcript_interactions": 2,
+      "total_chat_messages": 8,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    },
+    "Student_036": {
+      "total_transcript_interactions": 9,
+      "total_chat_messages": 3,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_037": {
+      "total_transcript_interactions": 0,
+      "total_chat_messages": 2,
+      "sessions_attended": 2,
+      "sessions_spoke": 0,
+      "sessions_chatted": 1,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [],
+      "chat_dates": [
+        "2026/09/03"
+      ]
+    },
+    "Student_038": {
+      "total_transcript_interactions": 4,
+      "total_chat_messages": 7,
+      "sessions_attended": 2,
+      "sessions_spoke": 1,
+      "sessions_chatted": 2,
+      "attendance_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ],
+      "speaking_dates": [
+        "2026/09/03"
+      ],
+      "chat_dates": [
+        "2026/09/01",
+        "2026/09/03"
+      ]
+    }
+  },
+  "engagement_metrics": {
+    "Student_001": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 4,
+      "avg_interactions_per_session": 2.0,
+      "helped_peers_score": 7.5,
+      "sentiment_label": "positive",
+      "new_engagement_score": 39.0
+    },
+    "Student_002": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 7,
+      "avg_interactions_per_session": 3.5,
+      "helped_peers_score": 17.3,
+      "sentiment_label": "negative",
+      "new_engagement_score": 50.7
+    },
+    "Student_003": {
+      "attendance_rate": 50.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 0.0,
+      "engagement_score": 20.0,
+      "total_interactions": 0,
+      "avg_interactions_per_session": 0.0,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "",
+      "new_engagement_score": 14.0
+    },
+    "Student_004": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 3,
+      "avg_interactions_per_session": 1.5,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 45.5
+    },
+    "Student_005": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 6,
+      "avg_interactions_per_session": 3.0,
+      "helped_peers_score": 26.0,
+      "sentiment_label": "positive",
+      "new_engagement_score": 53.3
+    },
+    "Student_006": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 100.0,
+      "engagement_score": 82.5,
+      "total_interactions": 9,
+      "avg_interactions_per_session": 4.5,
+      "helped_peers_score": 6.9,
+      "sentiment_label": "positive",
+      "new_engagement_score": 59.8
+    },
+    "Student_007": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 3,
+      "avg_interactions_per_session": 1.5,
+      "helped_peers_score": 38.6,
+      "sentiment_label": "positive",
+      "new_engagement_score": 48.3
+    },
+    "Student_008": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 40.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 48.8
+    },
+    "Student_009": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 40.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 48.8
+    },
+    "Student_010": {
+      "attendance_rate": 50.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 0.0,
+      "engagement_score": 20.0,
+      "total_interactions": 0,
+      "avg_interactions_per_session": 0.0,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "",
+      "new_engagement_score": 14.0
+    },
+    "Student_011": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 100.0,
+      "chat_rate": 100.0,
+      "engagement_score": 100.0,
+      "total_interactions": 23,
+      "avg_interactions_per_session": 11.5,
+      "helped_peers_score": 58.9,
+      "sentiment_label": "positive",
+      "new_engagement_score": 87.7
+    },
+    "Student_012": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 50.0,
+      "engagement_score": 70.0,
+      "total_interactions": 7,
+      "avg_interactions_per_session": 3.5,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 49.0
+    },
+    "Student_013": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 36.8
+    },
+    "Student_014": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 4.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 38.0
+    },
+    "Student_015": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 100.0,
+      "chat_rate": 100.0,
+      "engagement_score": 100.0,
+      "total_interactions": 25,
+      "avg_interactions_per_session": 12.5,
+      "helped_peers_score": 82.1,
+      "sentiment_label": "positive",
+      "new_engagement_score": 94.6
+    },
+    "Student_016": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 100.0,
+      "engagement_score": 82.5,
+      "total_interactions": 24,
+      "avg_interactions_per_session": 12.0,
+      "helped_peers_score": 49.3,
+      "sentiment_label": "positive",
+      "new_engagement_score": 72.5
+    },
+    "Student_017": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 5,
+      "avg_interactions_per_session": 2.5,
+      "helped_peers_score": 11.1,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 48.8
+    },
+    "Student_018": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 4.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 38.0
+    },
+    "Student_019": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 2,
+      "avg_interactions_per_session": 1.0,
+      "helped_peers_score": 45.0,
+      "sentiment_label": "positive",
+      "new_engagement_score": 50.2
+    },
+    "Student_020": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 10,
+      "avg_interactions_per_session": 5.0,
+      "helped_peers_score": 50.7,
+      "sentiment_label": "positive",
+      "new_engagement_score": 60.7
+    },
+    "Student_021": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 50.0,
+      "engagement_score": 70.0,
+      "total_interactions": 6,
+      "avg_interactions_per_session": 3.0,
+      "helped_peers_score": 57.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 66.1
+    },
+    "Student_022": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 100.0,
+      "engagement_score": 82.5,
+      "total_interactions": 12,
+      "avg_interactions_per_session": 6.0,
+      "helped_peers_score": 38.8,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 69.4
+    },
+    "Student_023": {
+      "attendance_rate": 50.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 0.0,
+      "engagement_score": 20.0,
+      "total_interactions": 0,
+      "avg_interactions_per_session": 0.0,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "",
+      "new_engagement_score": 14.0
+    },
+    "Student_024": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 36.8
+    },
+    "Student_025": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 50.0,
+      "engagement_score": 70.0,
+      "total_interactions": 4,
+      "avg_interactions_per_session": 2.0,
+      "helped_peers_score": 46.2,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 62.9
+    },
+    "Student_026": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 3,
+      "avg_interactions_per_session": 1.5,
+      "helped_peers_score": 31.4,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 54.9
+    },
+    "Student_027": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 100.0,
+      "chat_rate": 100.0,
+      "engagement_score": 100.0,
+      "total_interactions": 20,
+      "avg_interactions_per_session": 10.0,
+      "helped_peers_score": 48.3,
+      "sentiment_label": "positive",
+      "new_engagement_score": 84.5
+    },
+    "Student_028": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 40.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 48.8
+    },
+    "Student_029": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 1,
+      "avg_interactions_per_session": 0.5,
+      "helped_peers_score": 4.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 38.0
+    },
+    "Student_030": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 100.0,
+      "engagement_score": 65.0,
+      "total_interactions": 3,
+      "avg_interactions_per_session": 1.5,
+      "helped_peers_score": 8.6,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 48.1
+    },
+    "Student_031": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 100.0,
+      "chat_rate": 100.0,
+      "engagement_score": 100.0,
+      "total_interactions": 10,
+      "avg_interactions_per_session": 5.0,
+      "helped_peers_score": 90.0,
+      "sentiment_label": "positive",
+      "new_engagement_score": 97.0
+    },
+    "Student_032": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 100.0,
+      "chat_rate": 100.0,
+      "engagement_score": 100.0,
+      "total_interactions": 19,
+      "avg_interactions_per_session": 9.5,
+      "helped_peers_score": 43.5,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 83.0
+    },
+    "Student_033": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 2,
+      "avg_interactions_per_session": 1.0,
+      "helped_peers_score": 33.3,
+      "sentiment_label": "positive",
+      "new_engagement_score": 46.7
+    },
+    "Student_034": {
+      "attendance_rate": 50.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 0.0,
+      "engagement_score": 20.0,
+      "total_interactions": 0,
+      "avg_interactions_per_session": 0.0,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "",
+      "new_engagement_score": 14.0
+    },
+    "Student_035": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 100.0,
+      "engagement_score": 82.5,
+      "total_interactions": 10,
+      "avg_interactions_per_session": 5.0,
+      "helped_peers_score": 0.0,
+      "sentiment_label": "neutral",
+      "new_engagement_score": 57.7
+    },
+    "Student_036": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 50.0,
+      "engagement_score": 70.0,
+      "total_interactions": 12,
+      "avg_interactions_per_session": 6.0,
+      "helped_peers_score": 64.4,
+      "sentiment_label": "positive",
+      "new_engagement_score": 68.3
+    },
+    "Student_037": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 0.0,
+      "chat_rate": 50.0,
+      "engagement_score": 52.5,
+      "total_interactions": 2,
+      "avg_interactions_per_session": 1.0,
+      "helped_peers_score": 3.3,
+      "sentiment_label": "positive",
+      "new_engagement_score": 37.7
+    },
+    "Student_038": {
+      "attendance_rate": 100.0,
+      "speaking_rate": 50.0,
+      "chat_rate": 100.0,
+      "engagement_score": 82.5,
+      "total_interactions": 11,
+      "avg_interactions_per_session": 5.5,
+      "helped_peers_score": 73.3,
+      "sentiment_label": "positive",
+      "new_engagement_score": 79.7
+    }
+  },
+  "contribution_profiles": {
+    "Student_001": {
+      "message_count": 4,
+      "sentiment_avg": 0.105,
+      "sentiment_label": "positive",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 7.5
+    },
+    "Student_002": {
+      "message_count": 7,
+      "sentiment_avg": -0.05,
+      "sentiment_label": "negative",
+      "helping_count": 1,
+      "seeking_count": 2,
+      "off_topic_count": 2,
+      "ack_count": 2,
+      "resources_shared": 0,
+      "helped_peers_score": 17.3
+    },
+    "Student_004": {
+      "message_count": 3,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 2,
+      "resources_shared": 0,
+      "helped_peers_score": 0.0
+    },
+    "Student_005": {
+      "message_count": 6,
+      "sentiment_avg": 0.055,
+      "sentiment_label": "positive",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 2,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 26.0
+    },
+    "Student_006": {
+      "message_count": 9,
+      "sentiment_avg": 0.073,
+      "sentiment_label": "positive",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 6,
+      "ack_count": 2,
+      "resources_shared": 0,
+      "helped_peers_score": 6.9
+    },
+    "Student_007": {
+      "message_count": 3,
+      "sentiment_avg": 0.184,
+      "sentiment_label": "positive",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 38.6
+    },
+    "Student_008": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 40.0
+    },
+    "Student_009": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 40.0
+    },
+    "Student_011": {
+      "message_count": 23,
+      "sentiment_avg": 0.189,
+      "sentiment_label": "positive",
+      "helping_count": 6,
+      "seeking_count": 5,
+      "off_topic_count": 5,
+      "ack_count": 7,
+      "resources_shared": 0,
+      "helped_peers_score": 58.9
+    },
+    "Student_012": {
+      "message_count": 7,
+      "sentiment_avg": 0.042,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 1,
+      "off_topic_count": 3,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 0.0
+    },
+    "Student_013": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 1,
+      "off_topic_count": 0,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 0.0
+    },
+    "Student_014": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 4.0
+    },
+    "Student_015": {
+      "message_count": 25,
+      "sentiment_avg": 0.177,
+      "sentiment_label": "positive",
+      "helping_count": 9,
+      "seeking_count": 2,
+      "off_topic_count": 5,
+      "ack_count": 9,
+      "resources_shared": 0,
+      "helped_peers_score": 82.1
+    },
+    "Student_016": {
+      "message_count": 24,
+      "sentiment_avg": 0.102,
+      "sentiment_label": "positive",
+      "helping_count": 5,
+      "seeking_count": 3,
+      "off_topic_count": 7,
+      "ack_count": 9,
+      "resources_shared": 0,
+      "helped_peers_score": 49.3
+    },
+    "Student_017": {
+      "message_count": 5,
+      "sentiment_avg": 0.033,
+      "sentiment_label": "neutral",
+      "helping_count": 1,
+      "seeking_count": 1,
+      "off_topic_count": 3,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 11.1
+    },
+    "Student_018": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 4.0
+    },
+    "Student_019": {
+      "message_count": 2,
+      "sentiment_avg": 0.112,
+      "sentiment_label": "positive",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 45.0
+    },
+    "Student_020": {
+      "message_count": 10,
+      "sentiment_avg": 0.067,
+      "sentiment_label": "positive",
+      "helping_count": 3,
+      "seeking_count": 2,
+      "off_topic_count": 2,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 50.7
+    },
+    "Student_021": {
+      "message_count": 6,
+      "sentiment_avg": 0.046,
+      "sentiment_label": "neutral",
+      "helping_count": 3,
+      "seeking_count": 0,
+      "off_topic_count": 2,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 57.0
+    },
+    "Student_022": {
+      "message_count": 12,
+      "sentiment_avg": 0.031,
+      "sentiment_label": "neutral",
+      "helping_count": 2,
+      "seeking_count": 2,
+      "off_topic_count": 2,
+      "ack_count": 6,
+      "resources_shared": 0,
+      "helped_peers_score": 38.8
+    },
+    "Student_024": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 0.0
+    },
+    "Student_025": {
+      "message_count": 4,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 2,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 46.2
+    },
+    "Student_026": {
+      "message_count": 3,
+      "sentiment_avg": 0.042,
+      "sentiment_label": "neutral",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 31.4
+    },
+    "Student_027": {
+      "message_count": 20,
+      "sentiment_avg": 0.141,
+      "sentiment_label": "positive",
+      "helping_count": 6,
+      "seeking_count": 2,
+      "off_topic_count": 9,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 48.3
+    },
+    "Student_028": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 40.0
+    },
+    "Student_029": {
+      "message_count": 1,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 4.0
+    },
+    "Student_030": {
+      "message_count": 3,
+      "sentiment_avg": 0.0,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 0,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 8.6
+    },
+    "Student_031": {
+      "message_count": 10,
+      "sentiment_avg": 0.173,
+      "sentiment_label": "positive",
+      "helping_count": 5,
+      "seeking_count": 2,
+      "off_topic_count": 0,
+      "ack_count": 3,
+      "resources_shared": 0,
+      "helped_peers_score": 90.0
+    },
+    "Student_032": {
+      "message_count": 19,
+      "sentiment_avg": 0.039,
+      "sentiment_label": "neutral",
+      "helping_count": 5,
+      "seeking_count": 2,
+      "off_topic_count": 7,
+      "ack_count": 5,
+      "resources_shared": 0,
+      "helped_peers_score": 43.5
+    },
+    "Student_033": {
+      "message_count": 2,
+      "sentiment_avg": 0.125,
+      "sentiment_label": "positive",
+      "helping_count": 1,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 0,
+      "resources_shared": 0,
+      "helped_peers_score": 33.3
+    },
+    "Student_035": {
+      "message_count": 10,
+      "sentiment_avg": 0.042,
+      "sentiment_label": "neutral",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 5,
+      "ack_count": 5,
+      "resources_shared": 0,
+      "helped_peers_score": 0.0
+    },
+    "Student_036": {
+      "message_count": 12,
+      "sentiment_avg": 0.201,
+      "sentiment_label": "positive",
+      "helping_count": 4,
+      "seeking_count": 1,
+      "off_topic_count": 3,
+      "ack_count": 4,
+      "resources_shared": 0,
+      "helped_peers_score": 64.4
+    },
+    "Student_037": {
+      "message_count": 2,
+      "sentiment_avg": 0.137,
+      "sentiment_label": "positive",
+      "helping_count": 0,
+      "seeking_count": 0,
+      "off_topic_count": 1,
+      "ack_count": 1,
+      "resources_shared": 0,
+      "helped_peers_score": 3.3
+    },
+    "Student_038": {
+      "message_count": 11,
+      "sentiment_avg": 0.179,
+      "sentiment_label": "positive",
+      "helping_count": 4,
+      "seeking_count": 1,
+      "off_topic_count": 1,
+      "ack_count": 5,
+      "resources_shared": 0,
+      "helped_peers_score": 73.3
+    }
+  },
+  "generated_at": "2026-09-08T07:12:04.263750",
+  "teacher_name": ""
+}

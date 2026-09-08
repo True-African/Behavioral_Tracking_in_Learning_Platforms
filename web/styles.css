@@ -183,6 +183,20 @@ header p {
     color: #666;
 }
 
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.badge-positive { background: #e8f5e8; color: #28a745; }
+.badge-neutral { background: #fff3cd; color: #b8860b; }
+.badge-negative { background: #ffe6e6; color: #dc3545; }
+.badge-helpful { background: #d4edda; color: #155724; }
+.badge-seeking-help { background: #cce5ff; color: #004085; }
+
 .session-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -16,6 +16,10 @@ models/*.h5
 models/*.onnx
 models/*.pt
 
+# Labeling artifacts (may contain real student text — local only)
+models/review_queue.csv
+models/user_labels.csv
+
 # Generated outputs (regenerable by running the pipeline)
 data/*.json
 output.json
