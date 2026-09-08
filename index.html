@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance &amp; Engagement Dashboard</title>
+    <link rel="stylesheet" href="web/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Attendance &amp; Engagement Dashboard</h1>
+            <p>Sentiment-aware participation tracker</p>
+        </header>
+
+        <section class="summary-cards">
+            <div class="card"><h3>Total Sessions</h3><p id="total-sessions">-</p></div>
+            <div class="card"><h3>Unique Students</h3><p id="unique-students">-</p></div>
+            <div class="card"><h3>Avg Attendance</h3><p id="avg-attendance">-</p></div>
+            <div class="card"><h3>Teacher</h3><p id="teacher-name" style="font-size:1.1em;">-</p></div>
+        </section>
+        <p id="analysis-period" style="text-align:center; color:#666;"></p>
+
+        <section class="chart-section">
+            <div class="chart-container"><h3>Top Engagement Scores</h3><canvas id="engagementChart"></canvas></div>
+            <div class="chart-container"><h3>Attendance Overview</h3><canvas id="attendanceChart"></canvas></div>
+            <div class="chart-container"><h3>Speaking vs Chat Activity</h3><canvas id="participationChart"></canvas></div>
+            <div class="chart-container"><h3>Participation Distribution</h3><canvas id="sessionBreakdownChart"></canvas></div>
+            <div class="chart-container"><h3>Sentiment Distribution</h3><canvas id="sentimentChart"></canvas></div>
+            <div class="chart-container"><h3>Top Contributors (Helped Peers)</h3><canvas id="contributorsChart"></canvas></div>
+        </section>
+
+        <section class="data-section">
+            <div class="data-container">
+                <h3>Session Details</h3>
+                <div class="controls">
+                    <select id="sessionSelect"><option value="">Select a session...</option></select>
+                </div>
+                <div id="sessionData"></div>
+            </div>
+        </section>
+
+        <section class="students-section">
+            <div class="student-lists">
+                <div class="student-list"><h3>Top Engaged Students</h3><div id="topEngagedList"></div></div>
+                <div class="student-list"><h3>Needs Attention</h3><div id="lowEngagementList"></div></div>
+            </div>
+        </section>
+
+        <section class="export-section">
+            <button onclick="exportData()">Export Full Report (CSV + JSON)</button>
+        </section>
+    </div>
+    <script src="web/chart_handler.js"></script>
+</body>
+</html>
