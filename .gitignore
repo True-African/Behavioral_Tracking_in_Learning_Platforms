@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# ML model artifacts (regenerable — keep the seed training data tracked)
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.onnx
+models/*.pt
+
+# Generated outputs (regenerable by running the pipeline)
+data/*.json
+output.json
+reports/
+*.log
+
+# Secrets — NEVER commit these
+.env
+.env.*
+*.key
+credentials*.json
+secrets*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# DATA SEPARATION — raw student data NEVER enters version control.
+#   Raw inputs + PII outputs stay LOCAL ONLY. Only code, config, and
+#   SANITIZED/aggregate outputs are committed (see scripts/sanitize.py).
+# ---------------------------------------------------------------------------
+Attendance/
+chats/
+chats \[C1\]/
+chats \[C2\]/
+transcripts/
+transcripts\[C1\]/
+transcripts\[C2\]/
+data/

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#nav-links {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.chart-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.chart-box {
+    width: 100%;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 300px; /* Set a consistent height for the charts to prevent them from being too large */
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+#interaction-table-container {
+    margin-top: 20px; /* Reduced margin to minimize the empty space */
+    text-align: center;
+}
+
+#interaction-table {
+    margin-top: 0; /* Remove any potential top margin */
+}
+
+
+#non-participants {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+#nonParticipantsList {
+    padding: 0;
+    list-style-type: none;
+}
+
+#nonParticipantsList li {
+    margin: 5px 0;
+}
+
+#special-student-chart-container {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.student-chart-container {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
