@@ -11,7 +11,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_TEACHER = "Simeon Nsabiyumva"
+DEFAULT_TEACHER = ""
 EXCLUDE_SUBSTRINGS = ("read.ai", "meeting notes", "'s presentation")
 
 

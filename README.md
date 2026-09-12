@@ -85,6 +85,9 @@ python -c "import nltk; nltk.download('vader_lexicon')"
 Drop your Google Meet exports into `transcripts/` and `chats/`, then rebuild the data and
 serve the dashboard:
 
+> **Facilitator name:** pass `--teacher-name "Your Name"` so your own contributions
+> aren't counted as a student's (keep your real name out of Git).
+
 ```powershell
 py -3 improved_attendance_tracker.py --workspace . --output data/attendance_report.json --summary
 py -3 sentiment_pipeline.py --workspace .

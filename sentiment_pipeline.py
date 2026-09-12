@@ -170,7 +170,7 @@ def main():
     ws = Path(args.workspace)
     cfg_path = ws / args.config
     cfg = json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
-    teacher = cfg.get("teacher_name", "Simeon Nsabiyumva")
+    teacher = cfg.get("teacher_name", "")
     blend = cfg.get("new_engagement_blend", {"base_engagement": 0.7, "contribution": 0.3})
     sent = cfg.get("sentiment", {})
     pos_thr = sent.get("positive_threshold", 0.05)

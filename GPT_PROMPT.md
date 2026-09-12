@@ -11,7 +11,7 @@ You are a senior machine‑learning engineer + education‑analytics consultant 
 Work entirely inside this project folder (call it `<ROOT>`):
 
 ```
-C:/Users/Simeon/Desktop/Attend Engage Tracker pipeline
+C:/path/to/Attend Engage Tracker pipeline
 ```
 
 ## 0. HARD RULES
@@ -45,7 +45,7 @@ Use this **ground truth** (already discovered — verify it, do not assume it is
 ### Input formats (verified from real files)
 **Transcript** (`transcripts/*.txt`):
 ```
-Ethics in Software Engineering - C1 - 2026/09/01 08:50 CAT - Transcript   ← title line
+Demo Course - C1 - 2026/01/15 09:00 CAT - Transcript   ← title line
 Attendees
 Name1, Name2, Name3, ...
 Transcript
@@ -54,10 +54,10 @@ Speaker Name: spoken text...          ← sometimes preceded by a bare "00:25:00
 **Chat** (`chats/*`):
 ```
 00:03:07.347,00:03:10.347
-Seyi Adebayo: I thought you are from Rwanda
+Student A: I thought you are from Rwanda
 
 00:04:18.018,00:04:21.018
-Peter Nnamchukwu: Seyi is from Zimbabwe
+Student B: Student A is from Zimbabwe
 ```
 
 ### Output schema (`data/attendance_report.json`, verified)
@@ -75,7 +75,7 @@ Peter Nnamchukwu: Seyi is from Zimbabwe
   "engagement_metrics": { name: { "attendance_rate","speaking_rate","chat_rate","engagement_score","total_interactions","avg_interactions_per_session" } },
   "special_students": { ... },
   "generated_at": "...",
-  "teacher_name": "Simeon Nsabiyumva"
+  "teacher_name": "Facilitator Name"
 }
 ```
 `engagement_score` is a weighted composite of `attendance_rate` + `speaking_rate` + `chat_rate` (roughly 0.4/0.25/0.25 + a small term — recover the exact weights when you reconstruct the module).
@@ -170,7 +170,7 @@ For each student compute, per session and overall:
 - `message_count`, `sentiment_avg` (mean VADER compound), `sentiment_label` (`positive/neutral/negative`).
 - `helping_count` (# `helping_others`), `seeking_count` (# `seeking_help`), `off_topic_count`, `ack_count`.
 - `helped_peers_score` (0–100): weighted blend of `helping_count` + positive‑polarity messages + "answered a peer" (a `helping_others` message that follows a `seeking_help` from someone else) + resources shared.
-- `contribution_summary` — a 1–2 sentence, template‑friendly description (e.g. *"Nmesoma answered peers' questions 3 times and shared 2 resources; their messages were consistently positive and on‑topic."*).
+- `contribution_summary` — a 1–2 sentence, template‑friendly description (e.g. *"A student answered peers' questions 3 times and shared 2 resources; their messages were consistently positive and on‑topic."*).
 - `top_contribution` — the single most helpful message (highest `helping_others` confidence), quoted (truncated, no PII).
 - A **revised `engagement_score`** that blends the *existing* behavioral score with the *new* contribution signal, e.g. `new_engagement = 0.7 * base_engagement + 0.3 * helped_peers_score` (make the weights constants at the top of the module so they are easy to tune).
 

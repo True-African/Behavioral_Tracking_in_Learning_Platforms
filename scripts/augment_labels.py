@@ -77,7 +77,7 @@ CURATED = {
         "Is there a sample submission to look at",
     ],
     "social_off_topic": [
-        "haha lol", "I was in grade five", "Seyi is from Zimbabwe", "In this economy",
+        "haha lol", "I was in grade five", "Sam is from Zimbabwe", "In this economy",
         "Crazyyyy", "The class demands", "People are inviting problems they cannot defend",
         "But we write so well sir", "how is that AI", "please listen to this",
         "football is life", "the weather today is wild", "my network keeps dropping",

@@ -1,4 +1,4 @@
 # Optional watch list — one student name per line.
 # Lines starting with '#' are ignored. Partial matching is used (first/last/full name).
 # Example:
-# Simeon Nsabiyumva
+# Full Student Name
