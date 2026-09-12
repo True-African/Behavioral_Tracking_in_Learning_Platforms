@@ -160,6 +160,7 @@ def main():
     ap.add_argument("--config", default="config/pipeline_config.json")
     ap.add_argument("--report", default="data/attendance_report.json")
     ap.add_argument("--seed", default="models/seed_labels.csv")
+    ap.add_argument("--labels", default="models/labels_train.csv")
     ap.add_argument("--models-dir", default="models")
     ap.add_argument("--output", default="data/attendance_report.json")
     ap.add_argument("--messages-out", default="reports/sentiment_messages.csv")
@@ -195,15 +196,19 @@ def main():
     df["text"] = df["text"].astype(str)
 
     model_dir = ws / args.models_dir
-    seed_csv = ws / args.seed
-    if not args.skip_train and seed_csv.exists():
-        vec, model = train_intent_model(seed_csv, model_dir)
+    labels_path = Path(args.labels)
+    if not labels_path.is_absolute():
+        labels_path = ws / labels_path
+    if not labels_path.exists():
+        labels_path = ws / args.seed
+    if not args.skip_train and labels_path.exists():
+        vec, model = train_intent_model(labels_path, model_dir)
     else:
         try:
             vec = joblib.load(model_dir / "vectorizer.joblib")
             model = joblib.load(model_dir / "intent_model.joblib")
         except Exception:
-            print("No trained model and no seed labels found.")
+            print("No trained model and no label data found.")
             return
 
     compounds = [analyzer.polarity_scores(t)["compound"] for t in df["text"]]
