@@ -14,21 +14,28 @@ raw student data **local only**.
 5. Prepares **mail-merge** + per-student emails (`reports/`).
 6. **Sanitizes** the data into de-identified `output/` for publication.
 
-## Folder map
+## Repo structure
 
-```
-transcripts/   Google Meet transcript .txt files          (local only, git-ignored)
-chats/         Google Meet chat logs (no extension)       (local only, git-ignored)
-data/          attendance_report.json + local key         (local only, git-ignored)
-output/        anonymized_report.json + summary.csv       (committed)
-reports/       mail-merge CSVs + per-student emails       (generated)
-models/        seed_labels.csv + trained model artifacts  (committed)
-config/        pipeline_config.json + email/exclude lists (committed)
-legacy/        old tracker code (kept for reference)
-scripts/       run_analysis.sh, serve.sh, sanitize.py, label_messages.py
-tests/         unit tests
-web/           dashboard (chart_handler.js, styles.css)
-```
+| Path | Purpose |
+|------|---------|
+| `improved_attendance_tracker.py` | Parses transcripts/chats → base report |
+| `sentiment_pipeline.py` | VADER sentiment + contribution-intent classifier |
+| `summary_report.py` | Human-readable report summary |
+| `email_prep.py` | Mail-merge CSV + per-student emails |
+| `index.html` + `web/` | Interactive dashboard (JS/CSS) |
+| `scripts/sanitize.py` | De-identification for publication |
+| `scripts/augment_labels.py` | Builds the augmented training set |
+| `scripts/label_messages.py` | Label-review queue for the classifier |
+| `scripts/run_analysis.sh`, `scripts/serve.sh` | Bash helpers (Git Bash) |
+| `config/pipeline_config.json` | Weights, thresholds, file paths |
+| `models/` | `seed_labels.csv`, `labels_train.csv`, model artifacts (local) |
+| `tests/` | Unit tests |
+| `requirements.txt` | Pinned dependencies |
+| `transcripts/`, `chats/`, `Attendance/`, `data/` | Raw inputs + PII report (**local only**) |
+| `reports/` | Generated mail-merge + emails |
+| `output/` | De-identified research dataset (**committed**) |
+| `legacy/` | Older tracker code (reference) |
+| `GPT_PROMPT.md` | Master prompt that produced this pipeline |
 
 ## Pipeline
 
@@ -46,35 +53,109 @@ data/attendance_report.json  (extended: sentiment + contribution)
         └─ scripts/sanitize.py       → output/anonymized_* (no PII)
 ```
 
-## Setup
+## Quick start
 
-```powershell
-cd "Attend Engage Tracker pipeline"
-py -3 -m pip install -r requirements.txt
-py -3 -c "import nltk; nltk.download('vader_lexicon')"
+```bash
+git clone https://github.com/True-African/Behavioral_Tracking_in_Learning_Platforms.git
+cd Behavioral_Tracking_in_Learning_Platforms
 ```
 
-## Commands
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate it (pick your shell):
+
+- **Windows Git Bash:** `source venv/Scripts/activate`
+- **Windows PowerShell:** `.\venv\Scripts\Activate.ps1`
+- **Windows Command Prompt:** `venv\Scripts\activate.bat`
+- **Linux / macOS / Colab:** `source venv/bin/activate`
+
+Install the project and fetch the VADER lexicon:
+
+```bash
+pip install -r requirements.txt
+python -c "import nltk; nltk.download('vader_lexicon')"
+```
+
+## Run it locally (dashboard)
+
+Drop your Google Meet exports into `transcripts/` and `chats/`, then rebuild the data and
+serve the dashboard:
 
 ```powershell
-# 1. Rebuild the base report
+py -3 improved_attendance_tracker.py --workspace . --output data/attendance_report.json --summary
+py -3 sentiment_pipeline.py --workspace .
+py -3 -m http.server 8000
+```
+
+Open `http://127.0.0.1:8000/index.html` on the computer. To view it from a phone on the
+same trusted Wi-Fi, bind the server to your network:
+
+```powershell
+py -3 -m http.server 8000 --bind 0.0.0.0
+```
+
+then open `http://<your-computer-ip>:8000/index.html` on the phone.
+
+## Useful commands
+
+```powershell
+# 1. Rebuild the base attendance report
 py -3 improved_attendance_tracker.py --workspace . --output data/attendance_report.json --summary
 
-# 2. Add sentiment + contribution (trains the intent model on models/seed_labels.csv)
+# 2. Add sentiment + contribution (trains the intent model on models/labels_train.csv)
 py -3 sentiment_pipeline.py --workspace .
 
-# 3. Run tests
-py -3 -m unittest discover -s tests -v
+# 3. Print a human-readable summary
+py -3 summary_report.py --workspace .
 
-# 4. Serve the dashboard
-py -3 -m http.server 8000   # open http://localhost:8000/index.html
+# 4. Run the unit tests
+py -3 -m unittest discover -s tests -v
 
 # 5. Mail merge + per-student emails
 py -3 email_prep.py --workspace .
 
-# 6. Sanitize for publication (no raw names/quotes)
+# 6. Sanitize for publication (de-identified)
 py -3 scripts/sanitize.py --workspace .
+
+# 7. (Re)build the augmented training set
+py -3 scripts/augment_labels.py --workspace .
+
+# 8. Generate a review queue of low-confidence predictions
+py -3 scripts/label_messages.py --workspace .
 ```
+
+## Reports and generated files
+
+After running the pipeline, open:
+
+| File | What it is |
+|------|------------|
+| `index.html` (served) | Interactive dashboard for the class |
+| `reports/mail_merge.csv` | One row per student (mail-merge source) |
+| `reports/mail_merge_per_session.csv` | One row per student per session |
+| `reports/email_body.txt` | Reusable email template |
+| `reports/per_student/*.txt` | Pre-filled message per student |
+| `reports/sentiment_messages.csv` | Message-level sentiment/label detail |
+| `output/anonymized_report.json` | De-identified full report (publishable) |
+| `output/anonymized_summary.csv` | De-identified per-student summary |
+
+## Repo cleanliness (what is git-ignored)
+
+Raw student data and regenerable artifacts never enter version control:
+
+- `Attendance/`, `chats/`, `transcripts/` — raw Google Meet exports (PII)
+- `data/` — full PII report, reversible name key, sample backup
+- `reports/` — generated emails/CSVs (PII)
+- `models/*.joblib`, `models/*.pkl` — trained model artifacts (regenerable)
+- `models/review_queue.csv`, `models/user_labels.csv`, `models/labels_train_pseudo.csv` — real student text
+- `__pycache__/`, `venv/`, `.env` — environment/artifacts
+
+Only code, config, `models/seed_labels.csv` + `models/labels_train.csv`, and the
+de-identified `output/` are committed.
 
 ## How the scores are computed
 
@@ -101,8 +182,10 @@ published.
 
 ## Limitations
 
-- The intent classifier starts from a small seed (`models/seed_labels.csv`); expand it
-  or review low-confidence predictions in `models/review_queue.csv` to improve accuracy.
+- The intent classifier is trained on synthetic labels (`models/labels_train.csv`, ~1,300
+  examples). It scores high on synthetic hold-out data but needs **real** labeled messages
+  to generalize to your course's vocabulary — hand-label `models/review_queue.csv`
+  (save corrections as `models/user_labels.csv`) and retrain.
 - VADER can misread sarcasm/emoji. `top_contribution` is shown with its predicted label
   so a human can override.
 - The ML feedback is **formative**, not punitive — always human-review before sending.
