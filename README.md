@@ -183,6 +183,8 @@ maps names to stable IDs (`Student_001…`) via a reversible key kept only in
 (k-anonymity) before writing `output/`. Only `output/` + code/config are meant to be
 published.
 
+See **`docs/DATA_STATEMENT.md`** for the full data & anonymization methodology.
+
 ## Limitations
 
 - The intent classifier is trained on synthetic labels (`models/labels_train.csv`, ~1,300
